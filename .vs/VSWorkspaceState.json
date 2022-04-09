@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AnimaisAPI",
+    "\\AnimaisAPI\\AnimaisAPI",
+    "\\AnimaisAPI\\AnimaisAPI\\Controllers",
+    "\\AnimaisAPI\\AnimaisAPI\\Models"
   ],
+  "SelectedNode": "\\AnimaisAPI\\AnimaisAPI.sln",
   "PreviewInSolutionExplorer": false
 }

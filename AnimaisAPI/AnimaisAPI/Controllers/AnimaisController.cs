@@ -20,7 +20,7 @@ namespace AnimaisAPI.Controllers
             return retornoAnimais.Busca();
         }    
 
-        [HttpGet("Gatos", Name ="Gatos")]
+        [HttpGet("Gatos", Name ="Gato")]
         public List<Gato> Gatos ()
         {
             BuscaGato xpto = new BuscaGato();
@@ -33,13 +33,14 @@ namespace AnimaisAPI.Controllers
             return xpto.Busca().ToList();
         }
 
-        [HttpPost("CreaceCachorro", Name = "Cachorros")]
-        public List<Cachorro> Post(Cachorro cachorro)
+        [HttpPost("PostGato", Name = "Gatos")]
+        public List<Gato> Post(Gato gato)
         {
-            List<Cachorro> cachorros = new List<Cachorro>();
-            cachorro.Idade = cachorro.Idade + 10;
-            cachorros.Add(cachorro);
-            return cachorros;
+            List<Gato> gatos = new List<Gato>();
+            gato.Idade = gato.Idade+10;
+            gatos.Add(gato);
+            CriaGato.create();
+            return gatos;
         }
     }
 }
